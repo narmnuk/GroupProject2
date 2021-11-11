@@ -5,7 +5,6 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
-import utils.WebDriverUtils;
 
 public class TLASteps {
 
