@@ -40,7 +40,7 @@ public class TLASteps {
     @Then("Verify title of the page should be {string}")
     public void verifyTitleOfThePageShouldBe(String expectedTitle) {
 
-        Assert.assertEquals(expectedTitle, WebDriverUtils.getDriver().getTitle());
-        System.out.println(WebDriverUtils.getDriver().getTitle());
+        Assert.assertEquals(expectedTitle, impl.getTitle());
+        System.out.println(impl.getTitle());
     }
 }
