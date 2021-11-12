@@ -2,9 +2,21 @@ Feature: TLA scenarios
 
   Background:
     Given I navigate to TLA
-    Then I input email as "kuba@gmail.com"
-    Then I input password as "123456"
-    And I click on "Login" button
+    When I input email as "kuba@gmail.com"
+    When I input password as "123456"
+    Then I click on "login" button
 
-  Scenario: Verify title of the page
-    Then Verify title of the page should be "Home Page"
+  Scenario: Instructor should be able to see Homeworks navigation button
+    Then I should be able to see Homeworks button is displayed
+    When I click on "homeworks" button
+    Then Title of the page should be "Homework"
+
+  Scenario: Instructor should be able to see Meeting Links navigation button
+    Then I should be able to see Meeting Links button is displayed
+    When I click on "meeting" button
+    Then Title of the page should be "Meeting Links"
+
+  Scenario: Instructor should be able to see Manage Access navigation button
+    Then I should be able to see Manage Access button is displayed
+    When I click on "access" button
+    Then Title of the page should be "Access Management"

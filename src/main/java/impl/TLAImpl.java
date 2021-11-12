@@ -32,6 +32,15 @@ public class TLAImpl {
             case "login":
                 getPage().loginBtn.click();
                 break;
+            case "homeworks":
+                getPage().homeworksBtn.click();
+                break;
+            case "meeting":
+                getPage().meetingLinksBtn.click();
+                break;
+            case "access":
+                getPage().accessManagementBtn.click();
+                break;
         }
     }
 }

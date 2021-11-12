@@ -14,6 +14,7 @@ public class WebDriverUtils {
 
         if (driver == null)
             browserDriver();
+
         return driver;
     }
 
@@ -40,7 +41,6 @@ public class WebDriverUtils {
                 WebDriverManager.chromedriver().setup();
                 driver = new ChromeDriver();
                 break;
-
             case "Firefox":
                 WebDriverManager.firefoxdriver().setup();
                 driver = new FirefoxDriver();

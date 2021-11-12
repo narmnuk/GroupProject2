@@ -12,12 +12,21 @@ public class TLAPage {
         PageFactory.initElements(WebDriverUtils.getDriver(), this);
     }
 
-    @FindBy(xpath = "//input[@name='email']")
+    @FindBy(css = "input[name='email']")
     public WebElement eMail;
 
-    @FindBy(xpath = "//input[@name='password']")
+    @FindBy(css = "input[name='password']")
     public WebElement password;
 
-    @FindBy(xpath = "//button[@type='submit']")
+    @FindBy(css = "button[type='submit']")
     public WebElement loginBtn;
+
+    @FindBy(css = "a[href='/homeworks']")
+    public WebElement homeworksBtn;
+
+    @FindBy(css = "a[href='/meeting-links']")
+    public WebElement meetingLinksBtn;
+
+    @FindBy(css = "a[href='/access-management']")
+    public WebElement accessManagementBtn;
 }
