@@ -3,7 +3,7 @@ Feature: TLA scenarios
   Background:
     Given I navigate to TLA
     When I input email as "kuba@gmail.com"
-    When I input password as "123456"
+    And I input password as "123456"
     Then I click on "login" button
 
   Scenario: Instructor should be able to see Homeworks navigation button

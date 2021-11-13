@@ -1,6 +1,7 @@
 package steps;
 
 import impl.TLAImpl;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -23,7 +24,7 @@ public class TLASteps {
         impl.getPage().eMail.sendKeys(eMail);
     }
 
-    @When("I input password as {string}")
+    @And("I input password as {string}")
     public void iInputPasswordAs(String password) {
 
         impl.getPage().password.sendKeys(password);
